@@ -394,15 +394,15 @@
 }
 
 .inspiration-background {
-  background-image: url('/inspiration-side.png');
+  background-image: url('./inspiration-side.png');
 }
 
 .competitor-background {
-  background-image: url('/competitor-side.png');
+  background-image: url('./competitor-side.png');
 }
 
 .brand-background {
-  background-image: url('/brand-side.png');
+  background-image: url('./brand-side.png');
 }
 
 .heart-design {

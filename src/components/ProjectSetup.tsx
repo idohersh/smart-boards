@@ -111,9 +111,9 @@ const ProjectSetup = () => {
 
   return (
     <div className="project-setup">
-      <div className="subtract-icon">
-        <img src="/Subtract.svg" alt="Subtract" />
-      </div>
+              <div className="subtract-icon">
+          <img src="./Subtract.svg" alt="Subtract" />
+        </div>
       <div className="setup-container">
         <div className="setup-left">
           <main className="setup-main">
@@ -169,7 +169,7 @@ const ProjectSetup = () => {
                             <p>Pulls fresh ideas from top global design sources</p>
                           </div>
                           <div className="tooltip-icon">
-                            <img src="/Inspiration-icon.png" alt="Inspiration" />
+                            <img src="./Inspiration-icon.png" alt="Inspiration" />
                           </div>
                         </div>
                       </div>
@@ -193,9 +193,9 @@ const ProjectSetup = () => {
                              <h3>Brand board</h3>
                              <p>Builds on your brand's past visual assets</p>
                            </div>
-                           <div className="tooltip-icon">
-                             <img src="/Brand-icon.png" alt="Brand" />
-                           </div>
+                                                     <div className="tooltip-icon">
+                            <img src="./Brand-icon.png" alt="Brand" />
+                          </div>
                          </div>
                        </div>
                      )}
@@ -219,7 +219,7 @@ const ProjectSetup = () => {
                             <p>Analyzes visual language from a brand you name</p>
                           </div>
                           <div className="tooltip-icon">
-                            <img src="/Competitor-icon.png" alt="Competitor" />
+                            <img src="./Competitor-icon.png" alt="Competitor" />
                           </div>
                         </div>
                       </div>
