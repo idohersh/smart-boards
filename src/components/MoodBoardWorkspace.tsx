@@ -81,14 +81,14 @@ const MoodBoardWorkspace = () => {
 
   const getCurrentImages = () => {
     if (isShowingPlaceholders) {
-      return Array.from({ length: 8 }, (_, i) => `./${placeholderType}PlaceHolders/${i + 1}.png`);
+      return Array.from({ length: 8 }, (_, i) => `${import.meta.env.BASE_URL}${placeholderType}PlaceHolders/${i + 1}.png`);
     }
-    return Array.from({ length: 8 }, (_, i) => `./${currentContentSet}/images/${i + 1}.png`);
+    return Array.from({ length: 8 }, (_, i) => `${import.meta.env.BASE_URL}${currentContentSet}/images/${i + 1}.png`);
   };
 
   const getCurrentLayouts = () => {
     if (isShowingPlaceholders) {
-      return Array.from({ length: 8 }, (_, i) => `./${placeholderType}PlaceHolders/${i + 1}.png`);
+      return Array.from({ length: 8 }, (_, i) => `${import.meta.env.BASE_URL}${placeholderType}PlaceHolders/${i + 1}.png`);
     }
     
     // Each set has different layout file names
@@ -134,7 +134,7 @@ const MoodBoardWorkspace = () => {
     };
     
     const layoutNames = layoutFilesBySet[currentContentSet] || [];
-    return layoutNames.map(name => `./${currentContentSet}/layouts/${name}`);
+    return layoutNames.map(name => `${import.meta.env.BASE_URL}${currentContentSet}/layouts/${name}`);
   };
 
   const getCurrentColors = () => {
@@ -156,7 +156,7 @@ const MoodBoardWorkspace = () => {
   return (
     <div className="mood-board-workspace">
               <div className="subtract-icon">
-          <img src="./Subtract.svg" alt="Subtract" />
+          <img src={`${import.meta.env.BASE_URL}Subtract.svg`} alt="Subtract" />
         </div>
       <div className="workspace-container">
         <div className="workspace-left">
@@ -392,16 +392,16 @@ const MoodBoardWorkspace = () => {
             <h3 className="mood-section-title">Typography</h3>
             <div className="typography-grid">
               <div className="typography-item">
-                <img src="./typography/typ1-11.png" alt="Typography 1" />
+                <img src={`${import.meta.env.BASE_URL}typography/typ1-11.png`} alt="Typography 1" />
               </div>
               <div className="typography-item">
-                <img src="./typography/typ2-10.png" alt="Typography 2" />
+                <img src={`${import.meta.env.BASE_URL}typography/typ2-10.png`} alt="Typography 2" />
               </div>
               <div className="typography-item">
-                <img src="./typography/typ3.png" alt="Typography 3" />
+                <img src={`${import.meta.env.BASE_URL}typography/typ3.png`} alt="Typography 3" />
               </div>
               <div className="typography-item">
-                <img src="./typography/typ4.png" alt="Typography 4" />
+                <img src={`${import.meta.env.BASE_URL}typography/typ4.png`} alt="Typography 4" />
               </div>
             </div>
           </div>
@@ -411,16 +411,16 @@ const MoodBoardWorkspace = () => {
             <h3 className="mood-section-title">Icons</h3>
             <div className="icons-container">
               <div className="icon-item">
-                <img src="./icons/Kpi.png" alt="KPI Icon" />
+                <img src={`${import.meta.env.BASE_URL}icons/Kpi.png`} alt="KPI Icon" />
               </div>
               <div className="icon-item">
-                <img src="./icons/Kpi-1.png" alt="KPI Icon 1" />
+                <img src={`${import.meta.env.BASE_URL}icons/Kpi-1.png`} alt="KPI Icon 1" />
               </div>
               <div className="icon-item">
-                <img src="./icons/Kpi-2.png" alt="KPI Icon 2" />
+                <img src={`${import.meta.env.BASE_URL}icons/Kpi-2.png`} alt="KPI Icon 2" />
               </div>
               <div className="icon-item">
-                <img src="./icons/Kpi-3.png" alt="KPI Icon 3" />
+                <img src={`${import.meta.env.BASE_URL}icons/Kpi-3.png`} alt="KPI Icon 3" />
               </div>
             </div>
           </div>

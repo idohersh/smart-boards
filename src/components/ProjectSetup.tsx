@@ -112,7 +112,7 @@ const ProjectSetup = () => {
   return (
     <div className="project-setup">
               <div className="subtract-icon">
-          <img src="./Subtract.svg" alt="Subtract" />
+          <img src={`${import.meta.env.BASE_URL}Subtract.svg`} alt="Subtract" />
         </div>
       <div className="setup-container">
         <div className="setup-left">
@@ -169,7 +169,7 @@ const ProjectSetup = () => {
                             <p>Pulls fresh ideas from top global design sources</p>
                           </div>
                           <div className="tooltip-icon">
-                            <img src="./Inspiration-icon.png" alt="Inspiration" />
+                            <img src={`${import.meta.env.BASE_URL}Inspiration-icon.png`} alt="Inspiration" />
                           </div>
                         </div>
                       </div>
@@ -194,7 +194,7 @@ const ProjectSetup = () => {
                              <p>Builds on your brand's past visual assets</p>
                            </div>
                                                      <div className="tooltip-icon">
-                            <img src="./Brand-icon.png" alt="Brand" />
+                            <img src={`${import.meta.env.BASE_URL}Brand-icon.png`} alt="Brand" />
                           </div>
                          </div>
                        </div>
@@ -219,7 +219,7 @@ const ProjectSetup = () => {
                             <p>Analyzes visual language from a brand you name</p>
                           </div>
                           <div className="tooltip-icon">
-                            <img src="./Competitor-icon.png" alt="Competitor" />
+                            <img src={`${import.meta.env.BASE_URL}Competitor-icon.png`} alt="Competitor" />
                           </div>
                         </div>
                       </div>
