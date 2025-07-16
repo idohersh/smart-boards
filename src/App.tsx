@@ -5,7 +5,7 @@ import './App.css';
 
 function App() {
   return (
-    <Router>
+    <Router basename={process.env.NODE_ENV === 'production' ? '/smart-boards' : ''}>
       <div className="app">
         <Routes>
           <Route path="/" element={<Navigate to="/project/new" replace />} />
